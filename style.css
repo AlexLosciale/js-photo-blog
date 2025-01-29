@@ -15,8 +15,9 @@ h1 {
 }
 
 .board {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
     gap: 20px;
     padding: 40px;
     background: url('https://www.toptal.com/designers/subtlepatterns/patterns/cork-board.png');
@@ -27,6 +28,8 @@ h1 {
 }
 
 .polaroid {
+    flex: 1 1 250px;
+    max-width: 300px;
     background: white;
     padding: 10px;
     border-radius: 5px;
@@ -60,3 +63,17 @@ h1 {
     left: 50%;
     transform: translateX(-50%);
 }
+
+.polaroid:nth-child(even) {
+    transform: rotate(-2deg);
+}
+
+.polaroid:nth-child(odd) {
+    transform: rotate(2deg);
+}
+
+.polaroid:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
