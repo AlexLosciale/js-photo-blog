@@ -49,13 +49,14 @@ h1 {
 
 .polaroid::before {
     content: '';
-    width: 12px;
-    height: 12px;
-    background: brown;
-    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background-image: url(./img/pin.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     position: absolute;
-    top: -6px;
+    top: -10px;
     left: 50%;
     transform: translateX(-50%);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
