@@ -22,7 +22,6 @@ h1 {
     padding: 40px;
     background: url('https://www.toptal.com/designers/subtlepatterns/patterns/cork-board.png');
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     max-width: 900px;
     margin: auto;
 }
@@ -75,5 +74,6 @@ h1 {
 .polaroid:hover {
     transform: scale(1.05);
     transition: transform 0.2s ease-in-out;
+    cursor: pointer;
 }
 
